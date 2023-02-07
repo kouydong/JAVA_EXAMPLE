@@ -53,8 +53,8 @@ public class 함수형인터페이스예제1 {
         String 주소 = 람다구현7.반화형함수형인터페이스("서울시");
         System.out.printf("당신의 주소는 %s입니다.", 주소);
 
-//        반환함수형인터페이스 람다구현8 = 주소 -> return 주소; // ERROR
-//        람다구현8.반화형함수형인터페이스("서울시");
+        //        반환함수형인터페이스 람다구현8 = 주소 -> return 주소; // ERROR
+        //        람다구현8.반화형함수형인터페이스("서울시");
     }
 
 
@@ -63,14 +63,17 @@ public class 함수형인터페이스예제1 {
         void 매게변수없는메소드();
     }
 
+    @FunctionalInterface
     interface 매게변수있는함수형인터페이스 {
         void 매게변수있는메소드(String 아이디, String 이름);
     }
 
+    @FunctionalInterface
     interface 매게변수있는함수형인터페이스2 {
         void 매게변수있는메소드(int 나이);
     }
 
+    @FunctionalInterface
     interface 반환함수형인터페이스 {
         String 반화형함수형인터페이스(String 주소);
     }
