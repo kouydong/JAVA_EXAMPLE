@@ -3,6 +3,7 @@ package 인터페이스;
 interface 동물 {
     void 이동한다(int x, int y);
     void 먹는다();
+    int a = 10;
 }
 
 class 사람 implements 동물 {
