@@ -2,7 +2,7 @@ package 자바유틸패키지;
 
 import java.util.function.Predicate;
 
-public class Predicate클래스 {
+public class Predicate인터페이스 {
     public static void main(String[] args) {
         // negate() 연산
         Predicate<Integer> p1 = integer -> integer >= 100;
