@@ -7,7 +7,7 @@ interface 사람인터페이스<T>
 }
 
 // 사람클래스에서 사람인터페이스 추상 메서드를 구현
-class 사람클래스<T> implements 사람인터페이스
+class 사람클래스<T> implements 사람인터페이스<T>
 {
     @Override
     public void 이름가져오기()
