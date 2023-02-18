@@ -1,11 +1,11 @@
 package 스트림;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.stream.Stream;
 
-public class 스트림만들기 {
+public class 컬렉션스트림만들기 {
     public static void main(String[] args) {
         // List 스트림을 생성합니다.
         List<String> 리스트컬렉션 = new ArrayList<String>();
@@ -18,7 +18,12 @@ public class 스트림만들기 {
         집합컬렉션.add("집합 임꺽정");
 
         // forEach를 통해 스트림을 소비합니다.
-        리스트컬렉션.stream().forEach(System.out::println);
-        집합컬렉션.stream().forEach(string -> System.out.println(string));
+        Stream<String> stream1 = 리스트컬렉션.stream();
+        Stream<String> stream2 = 집합컬렉션.stream();
+
+        stream1.forEach(System.out::println);
+        stream2.forEach(string -> System.out.println(string));
+
+//        stream1.forEach(string -> System.out.println(string)); // ERROR
     }
 }
