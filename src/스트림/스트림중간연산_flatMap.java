@@ -11,7 +11,6 @@ public class 스트림중간연산_flatMap {
         Stream<String[]> stream2 = Stream.of( new String[]{"홍길동", "임꺽정", "고길동"}
                 ,new String[]{"홍길동", "임꺽정", "고길동"});
 
-
         // map 사용할 경우 각 배열에 대한 스트림이 생성됩니다.
         stream1.map(Arrays::asList).forEach(System.out::println);
 
