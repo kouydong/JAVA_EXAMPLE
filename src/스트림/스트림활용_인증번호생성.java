@@ -13,5 +13,6 @@ public class 스트림활용_인증번호생성 {
                         .mapToObj(value -> String.valueOf(value))
                         .collect(Collectors.joining());
         System.out.printf("인증번호 %s", sNumbers);
+
     }
 }
