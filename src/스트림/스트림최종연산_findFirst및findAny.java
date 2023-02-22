@@ -1,5 +1,6 @@
 package 스트림;
 
+import java.util.Arrays;
 import java.util.Optional;
 import java.util.stream.Stream;
 
@@ -30,5 +31,7 @@ public class 스트림최종연산_findFirst및findAny {
                 .filter(integer -> integer > 60)
                 .findAny();
         System.out.println("아무 요소를 가져옵니다. :" + intStream4);
+
+
     }
 }

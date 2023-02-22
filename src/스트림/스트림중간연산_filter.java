@@ -1,5 +1,8 @@
 package 스트림;
 
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.stream.IntStream;
 
 public class 스트림중간연산_filter {
@@ -13,5 +16,10 @@ public class 스트림중간연산_filter {
         IntStream intStream2 = IntStream.rangeClosed(1, 100); // 1~100까지의 int 스트림 생성
         // 작수이면서 5의 나머지가 0인 숫자만 출력
         intStream2.filter(value -> value % 2 == 0 && value % 5 == 0).forEach(System.out::println);
+
+        String[] names = {"홍길동", "임꺽정", "고길동"};
+        Arrays.stream(names).parallel().filter(s -> s.charAt(0) == '고').forEach(System.out::println);
     }
 }
+
+
