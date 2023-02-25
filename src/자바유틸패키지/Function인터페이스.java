@@ -5,16 +5,13 @@ import java.util.function.Function;
 
 public class Function인터페이스 {
     public static void main(String[] args) {
-        Function<String, String> f = (string) -> string + "방갑습니다.";
+        // 람다식
+        Function<String, String> requiredName1 = s ->  s + "을 입력하세요";
+        System.out.println(requiredName1.apply("이름"));
 
-       /**
-       * Applies this function to the given argument.
-       *
-       * @param t the function argument
-       * @return the function result
-       */
-        f.apply("안녕하세요");
-        System.out.println(f.toString());
+        // 항등함수
+        Function<Integer, Integer> sameNumber = integer -> integer;
+        System.out.println(sameNumber.apply(20));
 
     }
 }
