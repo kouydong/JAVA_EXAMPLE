@@ -1,6 +1,5 @@
-package 자바유틸패키지;
+package 자바Util패키지;
 
-import java.util.Optional;
 import java.util.OptionalDouble;
 import java.util.OptionalInt;
 import java.util.OptionalLong;

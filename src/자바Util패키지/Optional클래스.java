@@ -1,6 +1,5 @@
-package 자바유틸패키지;
+package 자바Util패키지;
 
-import javax.swing.text.html.Option;
 import java.util.Optional;
 
 public class Optional클래스 {

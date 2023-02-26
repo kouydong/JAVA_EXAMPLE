@@ -1,7 +1,6 @@
-package 자바유틸패키지;
+package 자바Util패키지;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.function.Supplier;
 
