@@ -57,7 +57,7 @@ public class 켈렉션활용 {
         returnMap.put("res_cnt"     , "1");
         returnMap.put("res_list"    , resList);
 
-        System.out.println("데이터의 Json 구조 " + returnMap);
+        System.out.println("Json 문자열 구조 " + returnMap);
         System.out.println("res_success 추출 : " + returnMap.get("res_success")); // res_success 추출
         System.out.println("res_cnt 추출 : " + returnMap.get("res_cnt")); // res_cnt 추출
 
